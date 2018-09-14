@@ -22,6 +22,6 @@ This is how sample output should look like for a batch size of 2:
         
  
 Hint:
-use tf.string_split with delimiter as ''
-tf.string_split returns sparse tensor, Use tf.sparse_tensor_to_dense to convert to a dense tensor, use default_value of UNK
-You would need to convert the char tensor to 1D. use tf.squeeze with axis=0
+1. use tf.string_split with delimiter as ''
+2. tf.string_split returns sparse tensor, Use tf.sparse_tensor_to_dense to convert to a dense tensor, use default_value of UNK
+3. You would need to convert the char tensor to 1D. use tf.squeeze with axis=0
